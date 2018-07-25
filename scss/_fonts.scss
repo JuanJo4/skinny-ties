@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Catamaran-Light';
+  src:  url('../fonts/Catamaran-Light.ttf.woff') format('woff'),
+  url('../fonts/Catamaran-Light.ttf.svg#Catamaran-Light') format('svg'),
+  url('../fonts/Catamaran-Light.ttf.eot'),
+  url('../fonts/Catamaran-Light.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Catamaran-Regular';
+  src:  url('../fonts/Catamaran-Regular.ttf.woff') format('woff'),
+  url('../fonts/Catamaran-Regular.ttf.svg#Catamaran-Regular') format('svg'),
+  url('../fonts/Catamaran-Regular.ttf.eot'),
+  url('../fonts/Catamaran-Regular.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Catamaran-SemiBold';
+  src:  url('../fonts/Catamaran-SemiBold.ttf.woff') format('woff'),
+  url('../fonts/Catamaran-SemiBold.ttf.svg#Catamaran-SemiBold') format('svg'),
+  url('../fonts/Catamaran-SemiBold.ttf.eot'),
+  url('../fonts/Catamaran-SemiBold.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin fontawesome {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}

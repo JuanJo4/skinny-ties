@@ -1,0 +1,238 @@
+@import 'fonts';
+
+body {
+  font-family: "Catamaran-Light";
+  font-size: 14px;
+  line-height: 1.5;
+  
+  h1, h2, h3, h4, h5,
+  ul, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    color: #242424;
+    text-decoration: none;
+  }
+  
+  .page-sizer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .offers {
+    background-color: #fc6a39;
+    color: #ffeeeb;
+    padding: 6px 0px;
+    height: 25px;
+    
+    .freeshipping {
+      display: inline-block;
+      background-color: #c9532f;
+      padding: 3px 8px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    
+    ul {
+      display: inline-block;
+      padding-left: 10px;
+      
+      &.desktop {
+        display: none;
+      }
+    }
+    
+  }
+  
+  nav {
+    .nav-mobile {
+      border-bottom: 1px solid #ededed;
+      
+      .nav-mobile-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 50px;
+      
+        .nav-mobile-items {
+          text-align: center;
+          flex: 1;
+          border-left: 1px solid #ededed;
+          
+          &.logo-mobile {
+            flex: 4;
+            text-align: left;
+            border-left: none;
+            
+            a {
+              height: 50px;
+              padding: 0px;
+               
+              h1 {
+                height: 0px;
+                width: 0px;
+                text-indent: -9999px;
+              }
+              
+              img {
+                width: auto;
+                height: 40px;
+                padding: 5px 0px;
+                margin-left: 8.82%;
+              }
+            }
+          }
+                  
+          a {
+            color: #242424;
+            display: block;
+            line-height: 16px;
+            padding: 17px 0px;
+          
+            &.cart {
+              &::after {
+                @include fontawesome;
+                content: '\f07a';
+              }
+            }
+            
+            &.account {
+              &::after {
+                @include fontawesome;
+                content: '\f007';
+              }
+            }
+            
+            &.search {
+              &::after {
+                @include fontawesome;
+                content: '\f002';
+              }
+            }
+            
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    
+    .nav-links {
+      
+      &::before {
+        content: '';
+          background-image: url(../img/dot.png);
+          background-repeat: repeat-x;
+          position: relative;
+          height: 5px;
+          display: block;
+          top: 67px;
+          z-index: 9;
+      }
+      
+      .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+        ul {
+          &.menu-l1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            
+            li {
+              height: 32px;
+              padding: 15px 0px;
+              
+              a {
+                span {
+                  &.arrow-down {
+                    width: 0;
+                    height: 0;
+                    border-left: 4px solid transparent;
+                    border-right: 4px solid transparent;
+                    border-top: 4px solid #E1E1E1;
+                    margin: 0 auto;
+                    display: block;
+                  }
+                }
+              }
+              
+              &:hover {
+                a {
+                  .arrow-down {
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    border-bottom: 8px solid black;  
+                    border-top: none;
+                  }
+                }
+              }
+            }
+          }  
+        }
+      
+        .logo {
+          display: none;
+        }
+        
+        .additional-links {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  .hero {
+    height: 350px;
+    background-color: #f4f4f4;
+    
+    .ties-slider {
+      width: 300px;
+      margin: 0 auto;
+      
+      .ties-item {
+        width: 80px;
+        margin: 0 auto;
+        
+        a {
+          span {
+            text-align: center;
+            display: block;
+            font-size: 18px;
+            margin-top: 10px;
+          }
+          
+          &:hover {
+            img {
+              position: relative;
+              top: -20px;
+            }
+            span {
+              color: #33A1FF;
+            }
+          }
+        }
+      }
+    }
+    
+    .tagline {
+      text-align: center;
+      font-family: 'Catamaran-Regular';
+      font-size: 2em;
+    }
+  }
+}
+
+@import 'tablet';
+@import 'desktop';
