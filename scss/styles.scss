@@ -198,11 +198,11 @@ body {
     background-color: #f4f4f4;
     
     .ties-slider {
-      width: 300px;
-      margin: 0 auto;
+      width: 100%;
       
       .ties-item {
         width: 80px;
+        height: 199px;
         margin: 0 auto;
         
         a {
@@ -224,12 +224,65 @@ body {
           }
         }
       }
+      
+      .owl-nav {
+        position: absolute;
+        top: 250px;
+        width: 100%;
+        
+        button {
+          outline: none;
+          
+          span {
+            font-size: 70px;
+            height: 50px;
+            background-color: #d8d8d8;
+            line-height: 50px;
+            display: block;
+            width: 50px;
+            color: #fff;
+            position: relative;
+          }
+          
+          &.owl-prev {
+            float: left;
+            
+            span {
+              border-radius: 0px 5px 5px 0px;
+              left: -5px;
+            }
+          }
+          
+          &.owl-next {
+            float: right;
+            
+            span {
+              border-radius: 5px 0px 0px 5px;
+              right: -5px;
+            }
+          }
+          
+          &:hover {
+            span {
+              background-color: #2A8CFF;
+              left: 0px;
+              right: 0px;
+            }
+          }
+        }
+      }
     }
     
     .tagline {
       text-align: center;
       font-family: 'Catamaran-Regular';
-      font-size: 2em;
+      font-size: 2.5em;
+      height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 40px;
+      line-height: 1em;
     }
   }
 }
