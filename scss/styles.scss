@@ -20,6 +20,10 @@ body {
     text-decoration: none;
   }
   
+  img:not([alt]) {
+    filter: grayscale(100%);
+  }
+  
   .page-sizer {
     width: 90%;
     margin: 0 auto;
