@@ -15,9 +15,20 @@
     }
     
     .hero {
-      
       .tagline {
         font-size: 3em;
+      }
+    }
+    
+    .content-tiles {
+      .page-sizer {
+        a {
+          width: 48%;
+          
+          &:last-child {
+            margin: 0 auto;
+          }
+        }
       }
     }
   }

@@ -289,6 +289,40 @@ body {
       line-height: 1em;
     }
   }
+  
+  .content-tiles {
+    margin-top: 30px;
+    
+    .page-sizer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      
+      a {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+        
+        img {
+          width: 100%;
+          height: auto;
+        }
+        
+        h2 {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          font-family: "Catamaran-SemiBold";
+          width: 75px;
+          text-align: right;
+        }
+        
+        &:hover {
+          box-shadow: 0 0 10px #33A1FF;
+        }
+      }
+    }
+  }
 }
 
 @import 'tablet';
