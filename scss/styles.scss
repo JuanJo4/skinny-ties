@@ -296,7 +296,7 @@ body {
     .page-sizer {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
       
       a {
         position: relative;
@@ -318,10 +318,28 @@ body {
         }
         
         &:hover {
-          box-shadow: 0 0 10px #33A1FF;
+          img {
+            box-shadow: 0 0 10px #33A1FF;  
+          }
         }
       }
     }
+  }
+  
+  .testimonial {
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+    
+    p {
+      a {
+        font-style: normal;
+        text-transform: uppercase;
+        color: #33A1FF;
+        font-size: 1rem;
+      }
+    }
+    
   }
 }
 

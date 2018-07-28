@@ -169,6 +169,10 @@
       .page-sizer {
         a {
           width: 30%;
+          
+          &:last-child {
+            margin: 0 0 20px 0;
+          }
         }
       }
     }
