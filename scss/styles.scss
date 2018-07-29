@@ -330,6 +330,11 @@ body {
     text-align: center;
     font-style: italic;
     font-size: 2em;
+    padding-bottom: 20px;
+    background-repeat: repeat-x;
+    background-image: url(../img/border-x.png);
+    background-position: bottom;
+    background-size: 8px;
     
     p {
       a {
