@@ -372,107 +372,109 @@ body {
     
   }
   
-  .footer-content {
-    .page-sizer {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-top: 20px;
-      
-      > div {
-        width: 100%;
-        margin: 20px 0px;
+  footer {
+    .footer-content {
+      .page-sizer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
         
-        &.flex-wrapper {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;  
-        }
-        
-        h3 {
+        > div {
           width: 100%;
-          font-family: 'Catamaran-SemiBold';
-          font-size: 1.2rem;
-          margin-bottom: 10px;
-          text-transform: capitalize;
-        }
-        
-        form {
-          button {
-            text-transform: uppercase;
-            display: block;
-            margin-top: 10px;
-            font-size: 0.8rem;
-            line-height: 1rem;
+          margin: 20px 0px;
+          
+          &.flex-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;  
           }
-        }
-        
-        p {
-          margin-bottom: 10px;
           
-          &.sociallinks {
-            a {
-              color: #fff;
-              width: 20px;
-              height: 20px;
-              display: inline-block;
-              text-align: center;
-              padding: 5px;
-              line-height: 20px;
-              border-radius: 100%;
-              
-              &.fb {
-                background-color: #3d5a98;
-                &::before {
-                  @include fontawesome;
-                  font-family: "Font Awesome 5 Brands";
-                  font-size: 16px;
-                  line-height: 20px;
-                  vertical-align: middle;
-                  content: '\f39e';
-                }
-              }
-              
-              &.pt {
-                background-color: #de2109;
-                &::before {
-                  @include fontawesome;
-                  font-family: "Font Awesome 5 Brands";
-                  font-size: 16px;
-                  line-height: 20px;
-                  vertical-align: middle;
-                  content: '\f231';
-                }
-              }
-              
-              &.tw {
-                background-color: #00aced;
-                &::before {
-                  @include fontawesome;
-                  font-family: "Font Awesome 5 Brands";
-                  font-size: 16px;
-                  line-height: 20px;
-                  vertical-align: middle;
-                  content: '\f099';
-                }
-              }
-            }
-          }  
-        }
-        
-        .content-image {
-          width: 48%;
-          
-          img {
+          h3 {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border: 1px solid #eaeaea;
+            font-family: 'Catamaran-SemiBold';
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            text-transform: capitalize;
           }
-        }
-        
-        .content {
-          width: 48%;
+          
+          form {
+            button {
+              text-transform: uppercase;
+              display: block;
+              margin-top: 10px;
+              font-size: 0.8rem;
+              line-height: 1rem;
+            }
+          }
+          
+          p {
+            margin-bottom: 10px;
+            
+            &.sociallinks {
+              a {
+                color: #fff;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                text-align: center;
+                padding: 5px;
+                line-height: 20px;
+                border-radius: 100%;
+                
+                &.fb {
+                  background-color: #3d5a98;
+                  &::before {
+                    @include fontawesome;
+                    font-family: "Font Awesome 5 Brands";
+                    font-size: 16px;
+                    line-height: 20px;
+                    vertical-align: middle;
+                    content: '\f39e';
+                  }
+                }
+                
+                &.pt {
+                  background-color: #de2109;
+                  &::before {
+                    @include fontawesome;
+                    font-family: "Font Awesome 5 Brands";
+                    font-size: 16px;
+                    line-height: 20px;
+                    vertical-align: middle;
+                    content: '\f231';
+                  }
+                }
+                
+                &.tw {
+                  background-color: #00aced;
+                  &::before {
+                    @include fontawesome;
+                    font-family: "Font Awesome 5 Brands";
+                    font-size: 16px;
+                    line-height: 20px;
+                    vertical-align: middle;
+                    content: '\f099';
+                  }
+                }
+              }
+            }  
+          }
+          
+          .content-image {
+            width: 48%;
+            
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border: 1px solid #eaeaea;
+            }
+          }
+          
+          .content {
+            width: 48%;
+          }
         }
       }
     }

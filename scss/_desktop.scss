@@ -172,12 +172,14 @@
       }
     }
     
-    .footer-content {
-      font-size: 1rem;
-      
-      .page-sizer {
-        > div {
-          width: 22%;
+    footer {
+      .footer-content {
+        font-size: 1rem;
+        
+        .page-sizer {
+          > div {
+            width: 22%;
+          }
         }
       }
     }
