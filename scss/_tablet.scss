@@ -31,5 +31,24 @@
         }
       }
     }
+    
+    .footer-content {
+      font-size: 1.2rem;
+      
+      .page-sizer {
+        > div {
+          width: 45%;
+          
+          .content-image {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+          
+          .content {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
