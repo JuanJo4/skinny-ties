@@ -51,6 +51,32 @@
           }
         }
       }
+      
+      .footer-links {
+        .flex-wrapper {
+          .footer-menu {
+            div {
+              width: 25%;
+              
+              ul {
+                li {
+                  display: block;
+                }
+              }
+            }
+          }
+          
+          .footer-contact {
+            position: relative;
+            
+            .button {
+              position: absolute;
+              bottom: 15px;
+              right: 15px;
+            }
+          }
+        }
+      }
     }
   }
 }

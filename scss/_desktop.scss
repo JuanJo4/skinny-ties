@@ -182,6 +182,22 @@
           }
         }
       }
+      
+      .footer-links {
+        .flex-wrapper {
+          .footer-menu {
+            width: 55%;
+            
+            ul {
+              li {
+                a {
+                  font-size: 0.9rem;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

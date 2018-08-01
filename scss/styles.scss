@@ -30,12 +30,18 @@ body {
     padding: 4px 8px;
   }
   
-  button {
+  button, .button {
     background-color: #35a2ff;
     color: #fff;
-    padding: 8px;
-    border: none;
-    border-radius: 2px;
+    padding: 8px 12px;
+    border: 1px solid #6d9ace;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    
+    &:hover {
+      background-color: #297fc7;
+      cursor: pointer;
+    }
   }
   
   img:not([alt]) {
@@ -265,7 +271,7 @@ body {
             background-color: #d8d8d8;
             line-height: 50px;
             display: block;
-            width: 50px;
+            width: 40px;
             color: #fff;
             position: relative;
           }
@@ -275,7 +281,6 @@ body {
             
             span {
               border-radius: 0px 5px 5px 0px;
-              left: -5px;
             }
           }
           
@@ -284,15 +289,13 @@ body {
             
             span {
               border-radius: 5px 0px 0px 5px;
-              right: -5px;
             }
           }
           
           &:hover {
             span {
               background-color: #2A8CFF;
-              left: 0px;
-              right: 0px;
+              width: 50px;
             }
           }
         }
@@ -476,6 +479,81 @@ body {
             width: 48%;
           }
         }
+      }
+    }
+    
+    .footer-links {
+      background-image: url('../img/border-dot.png');
+      background-repeat: repeat-x;
+      background-color: #F4F4F4;
+      padding: 30px 0px;
+      
+      .flex-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        
+        div {
+          width: 100%;
+          margin-bottom: 10px;
+          
+          &.footer-menu {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+            h4 {
+              font-family: 'Catamaran-SemiBold';
+              font-size: 1rem;
+            }
+            
+            ul {
+              margin-top: 10px;
+              
+              li {
+                display: inline-block;
+                margin-right: 10px;
+                margin-bottom: 5px;
+
+                a {
+                  color: #909090;
+                }
+              }
+            }
+          }
+          
+          &.footer-contact {
+            width: 288px;
+            padding: 15px;
+            background-color: #a2afc0;
+            border-radius: 5px;
+            border: 1px solid #919dad;
+            color: #fff;
+            
+            p {
+              &.tagline {
+                font-size: 1.8rem;
+                font-style: italic;
+              }
+              
+              a {
+                color: #fff;
+              }
+            }
+            
+            .button {
+              display: inline-block;
+              margin-top: 10px;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+      
+      .copyright {
+        color: #909090;
+        font-size: 0.7rem;
       }
     }
   }
