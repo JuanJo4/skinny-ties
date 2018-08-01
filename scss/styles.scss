@@ -518,6 +518,10 @@ body {
 
                 a {
                   color: #909090;
+                  
+                  &:hover {
+                    color: #35a2ff;
+                  }
                 }
               }
             }
